@@ -1,12 +1,64 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman Game</title>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <script src="assets/javascript/game.js"></script>
+
+    <div class="container-fluid">
+
+        <div class="row text-center d-block bg-primary">
+
+            <div class="col-sm-12">
+                <h1>HANGMAN GAME</h1>
+            </div>
+
+        </div>
+
+
+        <div class="row align-items-center text-center mt-5">
+            <div class="col-sm-6">
+                <h4>Current Word</h4>
+                <h5 id="currentWord"></h5>
+            </div>
+            <div class="col-sm-6">
+                <h4>No of Wins</h4>
+                <h5 id="winsCount"></h5>
+            </div>
+        </div>
+
+        <div class="row align-items-center text-center mt-5">
+            <div class="col-sm-6">
+                <h4>Guesses remaining</h4>
+                <h5 id="remGuess"></h5>
+            </div>
+            <div class="col-sm-6">
+                <h4>No of loses</h4>
+                <h5 id="lossCount"></h5>
+            </div>
+        </div>
+
+        <div class="row align-items-center text-center mt-5">
+            <div class="col-sm-6">
+                <h4>Letters guessed</h4>
+                <h5 id="charGuessed"></h5>
+            </div>
+            <div class="col-sm-6">
+                <h4>Play Again</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        initialize();
+    </script>
 </body>
+
 </html>
