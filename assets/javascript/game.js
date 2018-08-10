@@ -18,7 +18,7 @@ function initialize() {
     dashArray = [];
     guessedLetters = [];
     winFlag = false;
-    remGuesses = 10;
+    remGuesses = 10;    
     document.getElementById("winStatus").style = "display: none";
     document.getElementById("winstatusrow").style = "display: none";
     document.getElementById("winsCount").innerHTML = winsCount;
